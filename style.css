@@ -17,6 +17,8 @@ button {
 
 	border: none;
 	min-width: 170px;
+	min-height: 150px;
+	z-index: 5;
 
 	background-color: white;
 	padding: 50px;
@@ -26,33 +28,23 @@ button {
 	font-family: "hey comic";
 }
 
-.h-hr {
-	width: 530px;
-	height: 7px;
-	border: none;
-	position: absolute;
-
-	background-color: khaki; 
-}
-
 #grid {
 	width: fit-content;
 	margin: auto;
+
+	background-color: khaki;
+
+	display: grid;
+	grid-template-columns: repeat(3, 170px);
+	gap: 7px;
 }
 
 .vertical-line {
 	height: 500px;
 	position: absolute;
+	z-index: 1;
 
 	border-right: 7px solid khaki;
-}
-
-#vert-line-1 {
-	width: 170px
-}
-
-#vert-line-2 {
-	width: 340px
 }
 
 input[type = "radio"] {
