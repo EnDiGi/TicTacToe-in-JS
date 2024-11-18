@@ -5,18 +5,42 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>TicTacToe</title>
+	<link rel = "stylesheet" href = "style.css">
 </head>
 <body>
-	<div class = "grid">
-		<div class = "button" id = "pos1"><p> </p></div>
-		<div class = "button" id = "pos2"><p> </p></div>
-		<div class = "button" id = "pos3"><p> </p></div><br>
-		<div class = "button" id = "pos4"><p> </p></div>
-		<div class = "button" id = "pos5"><p> </p></div>
-		<div class = "button" id = "pos6"><p> </p></div><br>
-		<div class = "button" id = "pos7"><p> </p></div>
-		<div class = "button" id = "pos8"><p> </p></div>
-		<div class = "button" id = "pos9"><p> </p></div>
+
+	<div id = "diff-selector">
+		<div id = "difficulties-bg">			
+			<input type = "radio" id = "player-diff" name = "difficulty«" value = "player" checked><label for = "player-diff">VS Player</label>
+			<input type = "radio" id = "easy-diff" name = "difficulty" value = "easy"><label for = "easy-diff">VS Easy AI</label>
+			<input type = "radio" id = "medium-diff" name = "difficulty" value = "medium"><label for = "medium-diff">VS Medium AI</label>
+			<input type = "radio" id = "hard-diff" name = "difficulty" value = "hard"><label for = "hard-diff">VS Hard AI</label>
+		</div>
 	</div>
+
+	<br>
+	
+	<label id = "turn_info">Couldn't process current player</label>
+	
+	<br>
+
+	<div id = "grid">
+
+		<div class = "vertical-line" id = "vert-line-1"></div>
+		<div class = "vertical-line" id = "vert-line-2"></div>
+
+		<button class = "button" id = "pos1">X</button>
+		<button class = "button" id = "pos2">O</button>
+		<button class = "button" id = "pos3">X</button><hr class = "h-hr"><br><br>
+		<button class = "button" id = "pos4">X</button>
+		<button class = "button" id = "pos5">O</button>
+		<button class = "button" id = "pos6">O</button><hr class = "h-hr"><br><br>
+		<button class = "button" id = "pos7">X</button>
+		<button class = "button" id = "pos8">O</button>
+		<button class = "button" id = "pos9">X</button>
+
+	</div>
+
+	<script src = "script.js"></script>
 </body>
 </html>

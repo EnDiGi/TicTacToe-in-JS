@@ -1,40 +1,97 @@
 body {
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 34px
+	font-size: 24px;
+
+	display: flex;
+	flex-direction: column
 }
 
-#pos1{
-	border-right: solid 5px black;
-	border-bottom: solid 5px black;
+@font-face {
+    font-family: 'hey comic';
+    src: url('assets/fonts/Hey Comic.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
-#pos2{
-	border-right: solid 5px black;
-	border-bottom: solid 5px black;
+button {
+
+	border: none;
+	min-width: 170px;
+
+	background-color: white;
+	padding: 50px;
+	margin: 0px;
+
+	font-size: 34px;
+	font-family: "hey comic";
 }
 
-#pos3{
-	border-bottom: solid 5px black;
+.h-hr {
+	width: 530px;
+	height: 7px;
+	border: none;
+	position: absolute;
+
+	background-color: khaki; 
 }
 
-#pos4{
-	border-right: solid 5px black;
-	border-bottom: solid 5px black;
+#grid {
+	width: fit-content;
+	margin: auto;
 }
 
-#pos5{
-	border-right: solid 5px black;
-	border-bottom: solid 5px black;
+.vertical-line {
+	height: 500px;
+	position: absolute;
+
+	border-right: 7px solid khaki;
 }
 
-#pos6{
-	border-bottom: solid 5px black;
+#vert-line-1 {
+	width: 170px
 }
 
-#pos7{
-	border-right: solid 5px black;
+#vert-line-2 {
+	width: 340px
 }
 
-#pos8{
-	border-right: solid 5px black;
+input[type = "radio"] {
+	display: none;
+}
+
+input[type = "radio"] + label {
+	width: 200px;
+	padding: 10px;
+	border-radius: 5px;
+	margin: 3px;
+
+	background-color: khaki;
+
+	transition:ease-in-out
+}
+
+input[type = "radio"]:checked + label{
+	background-color: rgb(189, 181, 108);
+}
+
+.input-label:checked {
+	background-color: rgb(189, 181, 108);
+}
+
+#diff-selector {
+	margin: auto
+}
+
+#difficulties-bg {
+	padding: 10px 0;
+	margin: 3px;
+	
+	border-radius: 5px;
+	background-color: khaki;
+}
+
+#turn_info {
+	margin: auto;
+	font-family: "hey comic";
+	font-size: 34px;
 }
