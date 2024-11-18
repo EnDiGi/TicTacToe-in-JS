@@ -3,6 +3,38 @@ body {
 	font-size: 34px
 }
 
-.pos1{
-	border-right: solid 2px black;
+#pos1{
+	border-right: solid 5px black;
+	border-bottom: solid 5px black;
+}
+
+#pos2{
+	border-right: solid 5px black;
+	border-bottom: solid 5px black;
+}
+
+#pos3{
+	border-bottom: solid 5px black;
+}
+
+#pos4{
+	border-right: solid 5px black;
+	border-bottom: solid 5px black;
+}
+
+#pos5{
+	border-right: solid 5px black;
+	border-bottom: solid 5px black;
+}
+
+#pos6{
+	border-bottom: solid 5px black;
+}
+
+#pos7{
+	border-right: solid 5px black;
+}
+
+#pos8{
+	border-right: solid 5px black;
 }
