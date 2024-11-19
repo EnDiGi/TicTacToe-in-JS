@@ -17,10 +17,6 @@
 	#turn-info {
 		font-size: 24px;
 	}
-
-	.diff-separator-mobile {
-		display: block
-	}
 }
 
 @media screen and (orientation: landscape){
@@ -40,10 +36,6 @@
 
 	#turn-info{
 		font-size: 34px;
-	}
-
-	.diff-separator-mobile {
-		display: none
 	}
 }
 
