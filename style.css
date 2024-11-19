@@ -8,7 +8,7 @@
 		font-size: 24px;
 	}
 
-	button {
+	.button {
 		min-height: 100px;
 		padding: 30px;
 	}
@@ -28,7 +28,7 @@
 		grid-template-columns: repeat(3, 155px);
 	}
 
-	button {
+	.button {
 		min-height: 150px;
 		padding: 50px;
 	}
@@ -52,7 +52,7 @@ body {
 	flex-direction: column
 }
 
-button {
+.button {
 
 	border: none;
 	font-size: 28px;
@@ -112,7 +112,13 @@ input[type = "radio"]:checked + label{
 	font-family: "hey comic";
 }
 
-#refresh-to-restart{
-	font-family: "hey comic";
+#restart-btn {
 	margin: auto;
+
+	border: none;
+
+	background-color: white;
+	font-family: "hey comic";
+
+	font-size: 20px
 }

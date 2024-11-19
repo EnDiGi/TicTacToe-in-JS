@@ -11,10 +11,10 @@
 
 	<div id = "diff-selector">
 		<div id = "difficulties-bg">			
-			<input type = "radio" id = "player-diff" name = "difficulty" value = "player" checked><label for = "player-diff">VS Player</label>
-			<input type = "radio" id = "easy-diff" name = "difficulty" value = "easy"><label for = "easy-diff">VS Easy AI</label>
-			<input type = "radio" id = "medium-diff" name = "difficulty" value = "medium"><label for = "medium-diff">VS Medium AI</label>
-			<input type = "radio" id = "hard-diff" name = "difficulty" value = "hard"><label for = "hard-diff">VS Hard AI</label>
+			<input type = "radio" id = "player-diff" name = "difficulty" value = "player" checked onclick = "restart_game()"><label for = "player-diff">VS Player</label>
+			<input type = "radio" id = "easy-diff" name = "difficulty" value = "easy" onclick = "restart_game()"><label for = "easy-diff">VS Easy AI</label>
+			<input type = "radio" id = "medium-diff" name = "difficulty" value = "medium" onclick = "restart_game()"><label for = "medium-diff">VS Medium AI</label>
+			<input type = "radio" id = "hard-diff" name = "difficulty" value = "hard" onclick = "restart_game()"><label for = "hard-diff">VS Hard AI</label>
 		</div>
 	</div>
 
@@ -26,20 +26,20 @@
 
 	<div id = "grid">
 
-		<button class = "button" id = "pos1" onclick = "make_move(0)"> </button>
-		<button class = "button" id = "pos2" onclick = "make_move(1)"> </button>
-		<button class = "button" id = "pos3" onclick = "make_move(2)"> </button>
-		<button class = "button" id = "pos4" onclick = "make_move(3)"> </button>
-		<button class = "button" id = "pos5" onclick = "make_move(4)"> </button>
-		<button class = "button" id = "pos6" onclick = "make_move(5)"> </button>
-		<button class = "button" id = "pos7" onclick = "make_move(6)"> </button>
-		<button class = "button" id = "pos8" onclick = "make_move(7)"> </button>
-		<button class = "button" id = "pos9" onclick = "make_move(8)"> </button>
+		<button class = "button" id = "pos1" onclick = "move(0)"> </button>
+		<button class = "button" id = "pos2" onclick = "move(1)"> </button>
+		<button class = "button" id = "pos3" onclick = "move(2)"> </button>
+		<button class = "button" id = "pos4" onclick = "move(3)"> </button>
+		<button class = "button" id = "pos5" onclick = "move(4)"> </button>
+		<button class = "button" id = "pos6" onclick = "move(5)"> </button>
+		<button class = "button" id = "pos7" onclick = "move(6)"> </button>
+		<button class = "button" id = "pos8" onclick = "move(7)"> </button>
+		<button class = "button" id = "pos9" onclick = "move(8)"> </button>
 	</div>
 
 	<br>
 
-	<label id = "refresh-to-restart">Refresh to restart!</label>
+	<button id = "restart-btn" onclick = "restart_game()">Restart</button>
 
 	<script src = "script.js"></script>
 </body>
