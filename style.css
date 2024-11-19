@@ -15,7 +15,7 @@
 @media screen and (orientation: landscape){
 
 	body{
-		font-size: 24px
+		font-size: 22px
 	}
 
 	#grid{		
@@ -27,18 +27,18 @@
 	}
 }
 
-body {
-	font-family: Arial, Helvetica, sans-serif;
-
-	display: flex;
-	flex-direction: column
-}
-
 @font-face {
     font-family: 'hey comic';
     src: url('assets/fonts/Hey Comic.otf') format('truetype');
     font-weight: normal;
     font-style: normal;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+
+	display: flex;
+	flex-direction: column
 }
 
 button {
@@ -103,4 +103,8 @@ input[type = "radio"]:checked + label{
 	margin: auto;
 	font-family: "hey comic";
 	font-size: 34px;
+}
+
+#refresh-to-restart{
+	margin: auto;
 }
