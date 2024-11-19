@@ -13,6 +13,10 @@
 
 		font-size: 28px
 	}
+
+	#turn-info {
+		font-size: 24px;
+	}
 }
 
 @media screen and (orientation: landscape){
@@ -28,7 +32,9 @@
 	button {
 		min-height: 150px;
 		padding: 50px;
+	}
 
+	#turn-info{
 		font-size: 34px;
 	}
 }
@@ -101,10 +107,9 @@ input[type = "radio"]:checked + label{
 	background-color: khaki;
 }
 
-#turn_info {
+#turn-info {
 	margin: auto;
 	font-family: "hey comic";
-	font-size: 34px;
 }
 
 #refresh-to-restart{

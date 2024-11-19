@@ -6,7 +6,7 @@ let match_state = "not finished"
 let buttons = Array.from(document.getElementsByClassName("button"))
 let win = false;
 
-document.getElementById("turn_info").textContent = `${curr_player}'s turn`
+document.getElementById("turn-info").textContent = `${curr_player}'s turn`
 
 function get_current_diff(){
 	return document.querySelector('input[name = "difficulty"]:checked').value
@@ -58,14 +58,14 @@ function make_move(pos_number){
 	
 	turn += 1
 	curr_player = players[turn % 2]	
-	document.getElementById("turn_info").textContent = `${curr_player}'s turn`
+	document.getElementById("turn-info").textContent = `${curr_player}'s turn`
 
 	match_state = check_winner(buttons)
 	if(match_state === "win O"){
-		document.getElementById("turn_info").textContent = "O wins!"
+		document.getElementById("turn-info").textContent = "O wins!"
 	} else if(match_state === "win X"){
-		document.getElementById("turn_info").textContent = "X wins!"
+		document.getElementById("turn-info").textContent = "X wins!"
 	} else if(match_state === "tie"){
-		document.getElementById("turn_info").textContent = "Tie!"
+		document.getElementById("turn-info").textContent = "Tie!"
 	}
 }
